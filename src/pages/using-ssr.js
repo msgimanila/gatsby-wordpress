@@ -31,7 +31,7 @@ export default UsingSSR
 
 export async function getServerData() {
   try {
-    const res = await fetch(`https://dog.ceo/api/breeds/image/random`)
+    const res = await fetch(`https://realtymole-rental-estimate-v1.p.rapidapi.com/rentalPrice`)
     if (!res.ok) {
       throw new Error(`Response failed`)
     }
@@ -41,7 +41,10 @@ export async function getServerData() {
   } catch (error) {
     return {
       status: 500,
-      headers: {},
+       headers: {
+    'x-rapidapi-host': 'realtymole-rental-estimate-v1.p.rapidapi.com',
+    'x-rapidapi-key': '200dd973e1msh5a061e5a63dcff3p11ae28jsn925fc0050b02'
+  }
       props: {},
     }
   }
