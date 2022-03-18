@@ -31,7 +31,7 @@ export default UsingSSR
 
 export async function getServerData() {
   try {
-    const res = await fetch(`https://dog.ceo/api/breeds/image/random`)
+    const res = await fetch(`https://jsonplaceholder.typicode.com/photos`)
     if (!res.ok) {
       throw new Error(`Response failed`)
     }
