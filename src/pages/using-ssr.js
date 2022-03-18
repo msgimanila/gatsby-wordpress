@@ -1,3 +1,33 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@msgimanila 
+msgimanila
+/
+gatsby-wordpress
+Public
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+gatsby-wordpress/src/pages/using-ssr.js /
+@msgimanila
+msgimanila Update using-ssr.js
+Latest commit ff1b9b1 2 days ago
+ History
+ 2 contributors
+@msgimanila@gatsby-cloud
+48 lines (44 sloc)  1.1 KB
+   
 import * as React from "react"
 import { Link } from "gatsby"
 
@@ -31,7 +61,7 @@ export default UsingSSR
 
 export async function getServerData() {
   try {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/photos`)
+    const res = await fetch(`https://dog.ceo/api/breeds/image/random`)
     if (!res.ok) {
       throw new Error(`Response failed`)
     }
@@ -46,3 +76,16 @@ export async function getServerData() {
     }
   }
 }
+© 2022 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
